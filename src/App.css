@@ -1,38 +1,71 @@
 .App {
   text-align: center;
+  cursor: cell;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3{
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#original{
+  background-color: whitesmoke;
+  padding: 1rem 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#new{
+  background-color: darkgrey;
+  padding: 1rem 0;
 }
 
-.App-link {
-  color: #61dafb;
+#panel{
+  background-color: grey;
+  padding: 1rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ib-div{
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+
+/* DISPLAY */
+
+#original-door{
+  /* border: 2px solid black; */
+  background-color: red;
+
+  margin: 0 auto 3rem;
+}
+
+#new-door{
+  background-color: aqua;
+  box-sizing: border-box;
+  display: grid;
+}
+
+.panel-container{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.panel{
+  background-color: green;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+
+/* MOUSE COORDINATES */
+
+#mouse-coordinates{
+  position: fixed;
+  width: fit-content;
+  z-index: 1000;
+  cursor: cell;
 }
