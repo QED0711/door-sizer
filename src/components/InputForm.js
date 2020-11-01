@@ -13,7 +13,9 @@ export default function InputForm() {
         let newState = {}
 
         for (let input of inputs) {
-            newState[input.id] = parseFloat(input.value)
+            !!parseFloat(input.value)
+                ? newState[input.id] = parseFloat(input.value)
+                : newState[input.id] = input.value
         }
 
         setters.setState(newState)
@@ -24,6 +26,9 @@ export default function InputForm() {
         <div>
             
             <form id="input-form" onChange={handleChange}>
+
+                <input type="text" id="name" value={state.name} style={{textAlign: "center"}} />
+
 
                 <div id="original">
                     <h3>Original</h3>
@@ -69,14 +74,14 @@ export default function InputForm() {
                     
                     <br/>
 
-                    <div className="ib-div">
+                    {/* <div className="ib-div">
                         <label htmlFor="horizontalPadding">Horizontal Padding</label><br/>
                         <input id="horizontalPadding" type="number" step="0.01" value={state.horizontalPadding} min="0" max="9999" />
                     </div>
                     <div className="ib-div">
                         <label htmlFor="verticalPadding">Vertical Padding</label><br/>
                         <input id="verticalPadding" type="number" step="0.01" value={state.verticalPadding} min="0" max="9999" />
-                    </div>
+                    </div> */}
 
 
                 </div>

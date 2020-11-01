@@ -1,6 +1,8 @@
 
 const state = {
 
+    name: "name",
+
     originalWidth: 29.5,
     originalHeight: 80,
 
