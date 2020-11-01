@@ -21,6 +21,8 @@ h3{
 #panel{
   background-color: grey;
   padding: 1rem 0;
+
+  margin-bottom: 3rem;
 }
 
 .ib-div{
@@ -42,7 +44,12 @@ h3{
   background-color: aqua;
   box-sizing: border-box;
   display: grid;
+
 }
+
+
+
+/* PANELS */ 
 
 .panel-container{
   height: 100%;
@@ -53,10 +60,30 @@ h3{
 .panel{
   background-color: green;
   margin: 0 auto;
+  padding: 1rem 0.5rem;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+
+  box-sizing: border-box;
 }
+
+
+.panel-info-box{
+  /* margin: 1rem 0.25rem; */
+}
+
+.info-left{
+  float: left;
+}
+
+.info-right{
+  float: right;
+}
+
+
+
+
 
 
 

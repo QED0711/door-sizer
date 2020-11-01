@@ -34,8 +34,8 @@ function App() {
                 }
 
 
-                <Display />
                 <InputForm />
+                <Display />
             </div>
         </MainProvider>
     );
